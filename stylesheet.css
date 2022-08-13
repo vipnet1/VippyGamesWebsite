@@ -1,18 +1,47 @@
 
-
 body {
+    background-color: #255784;
+    background-image: url("mount_smaller.png");
+}
+
+h1 {
+    color: yellow;
     padding: 0;
-    margin: 0;
-    display: flex;
+    margin: 10px 10px 60px 10px;
     justify-content: center;
-    align-items: center;
-    /*1vh = 1% height of viewport, there we set body to be all viewport*/
-    min-height: 100vh;
-    background: #031321;
+    display: flex;
     font-family: consolas;
 }
 
+h2 {
+    color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+#txtOnPlayStore {
+    font-size: 40px;
+    color: white;
+}
+
+#dscHolder {
+    margin-bottom: 200px;
+}
+
+#btnHolder {
+    display: block;
+    text-align: center;
+}
+
+footer {
+    margin-top: 120px;
+    text-align: center;
+    padding: 3px;
+    color: white;
+  }
+
 a {
+    margin: 10px 50px 30px 50px;
     position: relative;
     display: inline-block;
     padding: 15px 30px;
