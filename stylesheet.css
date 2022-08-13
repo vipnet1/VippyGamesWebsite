@@ -41,7 +41,6 @@ footer {
   }
 
 a {
-    -webkit-touch-callout: none;
     margin: 10px 50px 30px 50px;
     position: relative;
     display: inline-block;
