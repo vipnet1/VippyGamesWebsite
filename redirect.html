@@ -8,8 +8,37 @@
 
 <body>
     <h1>
-        Opening your game...
+        Redirection to rooms
     </h1>
+
+    <div id="btnHolder">
+        <a id="gameLink" style="background-color: gold; border-radius: 5px;" class="neonLight" draggable="false" href="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle" target="_blank" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Open Game</a>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <div id="btnHolder">
+        <a style="background-color: yellowgreen; border-radius: 5px;" class="neonLight" draggable="false" href="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle" target="_blank" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Get For The Battle</a>
+    </div>
+
+    <div id="btnHolder">
+        <a style="background-color: yellowgreen; border-radius: 5px;" class="neonLight" draggable="false" href="index.html" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Home</a>
+    </div>
 </body>
 
 <script>
@@ -23,15 +52,6 @@
         urlToOpen += `?${roomName}`
     }
 
-    window.location.href = urlToOpen
-
-    // let appWindow = window.open(urlToOpen, "__blank")
-    // setTimeout(() => {
-    //     if(!appWindow) {
-    //         return
-    //     }
-
-    //     appWindow.location ="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle";
-    // }, 1000)
+    document.getElementById('gameLink').href = urlToOpen
 
 </script>
