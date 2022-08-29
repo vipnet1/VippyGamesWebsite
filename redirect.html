@@ -2,15 +2,28 @@
 
 <head>
     <title>Redirection to rooms</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" >
 </head>
 
+<body>
+    <h1>
+        Opening your game...
+    </h1>
+</body>
+
 <script>
-    FTB_BASE_URL = "ftb://ftb.app"
+    FTB_BASE_URL = "forthebattle://game"
 
-    url = window.location.href
-    roomName = url.split("?")[1]
+    input_url = window.location.href
 
-    let appWindow = window.open(FTB_BASE_URL, "__blank")
+    urlToOpen = FTB_BASE_URL
+    if(input_url.includes("?")) {
+        roomName = url.split("?")[1]
+        urlToOpen += `?${input_url}`
+    }
+
+    let appWindow = window.open(urlToOpen, "__blank")
     setTimeout(() => {
         if(!appWindow) {
             return
