@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Redirection to rooms</title>
+</head>
+
+<script>
+    FTB_BASE_URL = "ftb://ftb.app"
+
+    url = window.location.href
+    roomName = url.split("?")[1]
+
+    let appWindow = window.open(FTB_BASE_URL, "__blank")
+    setTimeout(() => {
+        if(!appWindow) {
+            return
+        }
+
+        appWindow.location ="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle";
+    }, 1000)
+
+</script>
