@@ -19,8 +19,8 @@
 
     urlToOpen = FTB_BASE_URL
     if(input_url.includes("?")) {
-        roomName = url.split("?")[1]
-        urlToOpen += `?${input_url}`
+        roomName = input_url.split("?")[1]
+        urlToOpen += `?${roomName}`
     }
 
     let appWindow = window.open(urlToOpen, "__blank")
