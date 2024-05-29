@@ -1,5 +1,5 @@
 
-.bianic_policy {
+.policy {
     color: white;
     padding: 0;
     margin: 10px 10px 60px 10px;
@@ -14,7 +14,7 @@
     display: inline-block;
 }
 
-.bianic_header_policy {
+.header_policy {
     color: yellow;
     padding: 0;
     font-size: 45px;
@@ -27,7 +27,7 @@
     line-height: 45px;
 }
 
-.bianic_subheader_policy {
+.subheader_policy {
     color: orange;
     padding: 0;
     font-size: 40px;
