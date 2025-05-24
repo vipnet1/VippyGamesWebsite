@@ -155,9 +155,8 @@ footer {
 }
 
 .image-description {
-    margin-right: 2px;
-    margin-left: 2px;
-    font-size: max(1.7vw, 1.7vh);
+    margin: 2px;
+    font-size: max(2.2vw, 2.2vh);
     color: white;
     font-family: consolas;
     padding: 20px;
@@ -169,7 +168,7 @@ footer {
 
 .small-image {
     width: 60vw;
-    height: 60vh;
+    height: min(60vw, 60vh);
 }
 
 .covered {
