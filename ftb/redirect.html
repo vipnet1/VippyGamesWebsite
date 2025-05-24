@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Redirection to rooms</title>
+
+    <link rel="stylesheet" type="text/css" href="../stylesheet.css" >
+</head>
+
+<body>
+    <h1>
+        Redirection to rooms
+    </h1>
+
+    <div id="btnHolder">
+        <a id="gameLink" style="background-color: gold; border-radius: 5px;" class="neonLight" draggable="false" href="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle" target="_blank" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Open Game</a>
+    </div>
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <div id="btnHolder">
+        <a style="background-color: yellowgreen; border-radius: 5px;" class="neonLight" draggable="false" href="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle" target="_blank" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Get For The Battle</a>
+    </div>
+
+    <div id="btnHolder">
+        <a style="background-color: yellowgreen; border-radius: 5px;" class="neonLight" draggable="false" href="index.html" >
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Home</a>
+    </div>
+</body>
+
+<script>
+    FTB_BASE_URL = "forthebattle://game"
+
+    input_url = window.location.href
+
+    urlToOpen = FTB_BASE_URL
+    if(input_url.includes("?")) {
+        roomName = input_url.split("?")[1]
+        urlToOpen += `?${roomName}`
+    }
+
+    document.getElementById('gameLink').href = urlToOpen
+
+</script>

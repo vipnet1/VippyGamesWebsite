@@ -1,0 +1,191 @@
+
+body {
+    background-color: #255784;
+    background-image: url("../mount_smaller.png");
+}
+
+iframe {
+    width: 60vw;
+    height: 60vh;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 0 0 0 0;
+}
+
+h1 {
+    color: yellow;
+    padding: 0;
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+    display: flex;
+    font-family: consolas;
+}
+
+h2 {
+    color: aqua;
+    display: flex;
+    justify-content: center;
+}
+
+#btnHolder {
+    display: block;
+    text-align: center;
+}
+
+#socialHolder {
+    display: block;
+    text-align: center;
+}
+
+.social_a {
+    text-decoration: none;
+}
+
+.social {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    display: inline-block;
+    justify-content: center;
+    margin: 30px 50px 30px 50px;
+}
+
+.social:hover {
+    color: white;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,
+    0 0 80px #2196f3;
+}
+
+footer {
+    margin-top: 120px;
+    text-align: center;
+    padding: 3px;
+    color: white;
+  }
+
+.neonLight {
+    margin: 10px 50px 30px 50px;
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+}
+
+.neonLight:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,
+    0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.neonLight span {
+    position: absolute;
+    display: block;
+}
+
+.neonLight span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg ,transparent, #2196f3);
+}
+
+.neonLight:hover span:nth-child(1){
+    left: 100%;
+    transition-duration: 0.5s;
+}
+
+.neonLight span:nth-child(2) {
+    right: 0;
+    top: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg ,transparent, #2196f3);
+}
+
+.neonLight:hover span:nth-child(2) {
+    top: 100%;
+    transition-duration: 0.5s;
+    transition-delay: 0.25s;
+}
+
+.neonLight span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg ,transparent, #2196f3);
+}
+
+.neonLight:hover span:nth-child(3) {
+    right: 100%;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.neonLight span:nth-child(4) {
+    left: 0;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg ,transparent, #2196f3);
+}
+
+.neonLight:hover span:nth-child(4) {
+    bottom: 100%;
+    transition-duration: 0.5s;
+    transition-delay: 0.75s;
+}
+
+.image-with-description {
+    padding-top: 110px;
+    display: flex;
+    align-items: center;
+}
+
+.image-description {
+    margin-right: 2px;
+    margin-left: 2px;
+    font-size: max(1.7vw, 1.7vh);
+    color: white;
+    font-family: consolas;
+    padding: 20px;
+    align-self: flex-start;
+    background-color: rgb(0, 0, 255, 0.5);
+    justify-content: center;
+    line-height: 45px;
+}
+
+.small-image {
+    width: 60vw;
+    height: 60vh;
+}
+
+.covered {
+    background-color: rgba(0, 128, 128, 0.5);
+    justify-content: center;
+    padding: 30px;
+}
+
+.covered2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    padding: 30px;
+}
+
+.covered3 {
+    background-color: rgba(128, 128, 0, 0.5);
+    justify-content: center;
+    padding: 30px;
+}
