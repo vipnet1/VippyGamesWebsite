@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #f0f0f0;
+}
+
+/* Page title */
+h1 {
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 40px;
+    font-size: 40px;
+}
+
+/* Container for the patch notes grid */
+.patch-notes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between the items */
+}
+
+/* Individual patch note item */
+.patch-note-item {
+    width: 320px; /* Width of each item */
+    background-color: darkblue;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the image corners are rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the item */
+.patch-note-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Making the whole item clickable */
+.patch-note-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Patch note image */
+.patch-note-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    display: block;
+}
+
+/* Text content below the image */
+.patch-info {
+    padding: 20px;
+}
+
+/* Patch version title */
+.patch-info h3 {
+    margin: 0 0 10px 0;
+    color: #00aaff;
+}
+
+/* Date of the patch */
+.patch-info .date {
+    font-size: 0.9em;
+    color: #aaaaaa;
+    margin: 0 0 15px 0;
+}
+
+/* Short description of the patch */
+.patch-info .description {
+    font-size: 1em;
+    line-height: 1.4;
+    color: #dddddd;
+    margin: 0;
+}

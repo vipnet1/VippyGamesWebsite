@@ -1,6 +1,7 @@
 body {
     background-color: #000000; /* Your solid black background */
     position: relative; /* Essential for positioning the pseudo-element correctly */
+    min-height: 100vh;
     /* No background-image or opacity directly on body */
 }
 
