@@ -16,19 +16,10 @@ body::before {
     z-index: -1; /* Puts this pseudo-element layer BEHIND your body's content */
 }
 
-iframe {
-    width: 60vw;
-    height: 60vh;
-    display: block;
-    margin: 0 auto;
-    border: none;
-    padding: 0 0 0 0;
-}
-
 h1 {
     color: yellow;
     padding: 0;
-    margin: 10px 10px 10px 10px;
+    margin: 10px 10px 60px 10px;
     justify-content: center;
     display: flex;
     font-family: consolas;
@@ -38,6 +29,15 @@ h2 {
     color: aqua;
     display: flex;
     justify-content: center;
+}
+
+#txtOnPlayStore {
+    font-size: 40px;
+    color: white;
+}
+
+#dscHolder {
+    margin-bottom: 200px;
 }
 
 #btnHolder {
@@ -160,43 +160,43 @@ footer {
     transition-delay: 0.75s;
 }
 
-.image-with-description {
-    padding-top: 110px;
-    display: flex;
-    align-items: center;
-}
-
-.image-description {
-    margin: 2px;
-    font-size: max(2.2vw, 2.2vh);
-    color: white;
-    font-family: consolas;
-    padding: 20px;
-    align-self: flex-start;
-    background-color: rgb(0, 0, 255, 0.5);
+.header_policy {
+    color: yellow;
+    padding: 0;
+    font-size: 45px;
+    margin: 10px 10px 10px 10px;
     justify-content: center;
+    display: flex;
+    font-family: consolas;
+    background-color: rgb(0, 255, 0, 0.3);
+    padding: 20px;
     line-height: 45px;
 }
 
-.small-image {
-    width: 50vw;
-    height: min(25vw, 60vh);
+.policy {
+    color: white;
+    padding: 0;
+    margin: 0px 10px 10px 10px;
+    justify-content: center;
+    display: flex;
+    font-size: 35px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(0, 0, 255, 0.5);
+    line-height: 45px;
+    padding: 20px;
+    text-align: left;
+    display: inline-block;
 }
 
-.covered {
-    background-color: rgba(0, 128, 128, 0.5);
+.subheader_policy {
+    color: white;
+    padding: 0;
+    font-size: 45px;
+    margin: 10px 10px 10px 10px;
     justify-content: center;
-    padding: 30px;
-}
-
-.covered2 {
-    background-color: rgba(0, 0, 0, 0.5);
-    justify-content: center;
-    padding: 30px;
-}
-
-.covered3 {
-    background-color: rgba(128, 128, 0, 0.5);
-    justify-content: center;
-    padding: 30px;
+    display: flex;
+    background-color: rgb(255, 0, 255, 0.3);
+    padding: 20px;
+    font-family: consolas;
+    line-height: 45px;
 }

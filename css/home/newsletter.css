@@ -1,0 +1,93 @@
+/* Basic styling for the form container */
+.newsletter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: 20px;
+}
+
+/* Style for the card itself */
+.newsletter-card {
+    background: darkslateblue;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+}
+
+.newsletter-card h2 {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 0px;
+    text-align: left;
+}
+
+.newsletter-card p {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+/* Styling for the form and its elements */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter-form input {
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: #5a5acd;
+}
+
+.newsletter-form button {
+    background-color: #5a5acd;
+    color: #ffffff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #4343d3;
+    transform: translateY(-2px);
+}
+
+/* Styling for the new unordered list */
+.newsletter-list {
+    text-align: left;
+    list-style-type: disc; /* You can use 'circle' or 'square' if you prefer */
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px; /* Adjust spacing as needed */
+}
+
+.newsletter-list li {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    margin-left: 20px; /* Add some indentation for the bullet points */
+}
