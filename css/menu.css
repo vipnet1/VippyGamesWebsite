@@ -108,10 +108,10 @@
 }
 
 /* --- Mobile Menu Styles --- */
-@media (max-width: 768px) {
+@media (orientation: portrait) {
     .navbar {
-        justify-content: space-between;
-        padding: 10px 20px;
+        justify-content: right;
+        padding: 30px 20px;
     }
 
     .hamburger-menu {
@@ -142,7 +142,8 @@
     }
 
     .nav-links a {
-        padding: 15px;
+        padding: 30px 15px;
+        font-size: 40px;
     }
 
     .dropdown > a.dropdown-toggle {
