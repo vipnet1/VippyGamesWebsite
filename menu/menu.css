@@ -97,6 +97,16 @@
     display: block;
 }
 
+.hamburger-menu {
+    display: none; /* This hides the button on all screen sizes initially */
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 30px;
+    z-index: 101;
+}
+
 /* --- Mobile Menu Styles --- */
 @media (max-width: 768px) {
     .navbar {
@@ -106,12 +116,6 @@
 
     .hamburger-menu {
         display: block;
-        cursor: pointer;
-        background: none;
-        border: none;
-        color: white;
-        font-size: 40px;
-        font-family: consolas;
     }
 
     .nav-links {
