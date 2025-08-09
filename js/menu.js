@@ -5,6 +5,18 @@ document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelector('.nav-links');
     const navItems = document.querySelectorAll('.nav-links a');
 
+    // This listener will close all menus when the user returns to the page
+    // from another site (e.g., by using the browser's back button).
+    window.addEventListener('pageshow', function(event) {
+        // Check if the page is being loaded from the browser's cache
+        if (event.persisted) {
+            navLinks.classList.remove('active');
+            document.querySelectorAll('.dropdown-content.show').forEach(openDropdown => {
+                openDropdown.classList.remove('show');
+            });
+        }
+    });
+
     hamburgerMenu.addEventListener('click', () => {
         navLinks.classList.toggle('active');
     });
@@ -43,15 +55,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     scrollLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            // Get the full URL from the link's href attribute
             const targetUrl = new URL(this.href, window.location.href);
 
-            // Check if the link is for the current page
             if (targetUrl.hostname === window.location.hostname && targetUrl.pathname === window.location.pathname) {
-                // Prevent the default navigation
                 e.preventDefault();
 
-                // Get the target element's ID from the URL hash
                 const targetId = targetUrl.hash;
                 const targetElement = document.querySelector(targetId);
 
@@ -62,7 +70,6 @@ document.addEventListener("DOMContentLoaded", function() {
                 }
             }
             
-            // Hide the dropdown and the main menu after clicking the link
             const parentDropdownContent = this.closest('.dropdown-content');
             if (parentDropdownContent) {
                 parentDropdownContent.classList.remove('show');
