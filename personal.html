@@ -6,12 +6,32 @@
 
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css" >
     <link rel="stylesheet" type="text/css" href="menu/menu.css" >
+    <link rel="stylesheet" type="text/css" href="css/menu.css" >
     <link rel="icon" href="images/vippy_games_logo.png" type="image/png">
 </head>
 
 <body>
-    <div id="nav-placeholder"></div>
-    <script src="menu/loadMenu.js"></script>
+    <nav class="navbar">
+        <button class="hamburger-menu">&#9776;</button>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">FTB</a>
+                <div class="dropdown-content">
+                    <a href="./ftb/index.html">Home</a>
+                    <a href="./ftb/patch-notes/index.html">Patch Notes</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle">About</a>
+                <div class="dropdown-content">
+                    <a href="index.html#joinAdventure" class="scroll-link">Newsletter</a>
+                    <a href="index.html#contactHeader" class="scroll-link">Contact</a>
+                    <a target="_blank" href="https://drive.google.com/drive/folders/1lIa9rBfku5IrXSfCyYw1zHRT5wyoIgvw?usp=drive_link">Press Kit</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
 
     <h1>Vippy Games</h1>
 
@@ -111,4 +131,5 @@
             contact@vippy.games</a>
       </footer>
 
+      <script src="js/menu.js"></script>
 </body>

@@ -1,4 +1,4 @@
-function setupMenu() {
+document.addEventListener("DOMContentLoaded", function() {
     const scrollLinks = document.querySelectorAll('.scroll-link');
     const dropdownToggles = document.querySelectorAll('.dropdown-toggle');
     const hamburgerMenu = document.querySelector('.hamburger-menu');
@@ -11,7 +11,7 @@ function setupMenu() {
 
     navItems.forEach(item => {
         item.addEventListener('click', () => {
-            if (navLinks.classList.contains('active')) {
+            if (navLinks.classList.contains('active') && !item.classList.contains('dropdown-toggle')) {
                 navLinks.classList.remove('active');
             }
         });
@@ -43,25 +43,33 @@ function setupMenu() {
 
     scrollLinks.forEach(link => {
         link.addEventListener('click', function(e) {
-            e.preventDefault();
+            // Get the full URL from the link's href attribute
+            const targetUrl = new URL(this.href, window.location.href);
 
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
+            // Check if the link is for the current page
+            if (targetUrl.hostname === window.location.hostname && targetUrl.pathname === window.location.pathname) {
+                // Prevent the default navigation
+                e.preventDefault();
 
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth'
-                });
+                // Get the target element's ID from the URL hash
+                const targetId = targetUrl.hash;
+                const targetElement = document.querySelector(targetId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                }
+            }
+            
+            // Hide the dropdown and the main menu after clicking the link
+            const parentDropdownContent = this.closest('.dropdown-content');
+            if (parentDropdownContent) {
+                parentDropdownContent.classList.remove('show');
+            }
+            if (navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
             }
         });
     });
-}
-
-document.addEventListener("DOMContentLoaded", function() {
-    fetch('https://vippy.games/menu/menu.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('nav-placeholder').innerHTML = data;
-            setupMenu();
-        })
 });
