@@ -108,7 +108,7 @@
 }
 
 /* --- Mobile Menu Styles --- */
-@media (orientation: portrait) {
+@media (max-width: 768px) or ((orientation: portrait) and (min-width: 769px)) {
     .navbar {
         justify-content: right;
         padding: 30px 20px;
@@ -116,6 +116,7 @@
 
     .hamburger-menu {
         display: block;
+        font-size: 40px;
     }
 
     .nav-links {
