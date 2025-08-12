@@ -22,7 +22,7 @@
 .nav-links a {
     color: #f4f4f4;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2rem;
     font-family: consolas;
     font-weight: bold;
     display: block;
@@ -41,6 +41,7 @@
 /* --- Arrow Styling --- */
 .dropdown > a.dropdown-toggle {
     position: relative;
+    margin-right: 5px;
     padding-right: 25px; /* Add space for the arrow */
 }
 
@@ -56,12 +57,6 @@
     border-right: 5px solid transparent;
     border-top: 5px solid #f4f4f4; /* Creates the down-pointing triangle */
     transition: transform 0.3s ease;
-}
-
-/* Arrow rotation when menu is open */
-.dropdown-content.show ~ a.dropdown-toggle::after {
-    transform: translateY(-50%) rotate(180deg);
-    border-top: 5px solid #00aaff;
 }
 
 .dropdown-content {
@@ -83,7 +78,7 @@
     padding: 15px 20px;
     text-decoration: none;
     display: block;
-    font-size: 26px;
+    font-size: 1.7rem;
     font-family: consolas;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
@@ -103,20 +98,19 @@
     background: none;
     border: none;
     color: white;
-    font-size: 30px;
+    font-size: 4.5rem;
     z-index: 101;
 }
 
 /* --- Mobile Menu Styles --- */
-@media (max-width: 768px) or ((orientation: portrait) and (min-width: 769px)) {
+@media (max-width: 768px) {
     .navbar {
         justify-content: right;
-        padding: 30px 20px;
+        padding: 0px;
     }
 
     .hamburger-menu {
         display: block;
-        font-size: 40px;
     }
 
     .nav-links {

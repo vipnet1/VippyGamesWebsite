@@ -1,7 +1,6 @@
 .header_cover {
     color: yellow;
-    padding: 0;
-    font-size: 45px;
+    font-size: 2.8rem;
     margin: 10px 10px 10px 10px;
     justify-content: center;
     display: flex;
@@ -9,27 +8,30 @@
     background-color: rgb(0, 255, 0, 0.3);
     padding: 20px;
     line-height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
 }
 
 .cover {
     color: white;
-    padding: 0;
-    margin: 0px 10px 10px 10px;
+    margin: 0px 5px 10px 5px;
     justify-content: center;
     display: flex;
-    font-size: 35px;
+    font-size: 2.2rem;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(0, 0, 255, 0.5);
     line-height: 45px;
     padding: 20px;
     text-align: left;
     display: inline-block;
+    border-radius: 5px;
+    align-items: center;
 }
 
 .subheader_cover {
     color: white;
-    padding: 0;
-    font-size: 45px;
+    font-size: 2.8rem;
     margin: 10px 10px 10px 10px;
     justify-content: center;
     display: flex;
@@ -37,4 +39,25 @@
     padding: 20px;
     font-family: consolas;
     line-height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 100px;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+.header_cover {
+    font-size: 2rem;
+    padding: 0px 5px 5px 5px;
+}
+
+.cover {
+    font-size: 1.6rem;
+    padding: 0px 5px 5px 5px;
+}
+
+.subheader_cover {
+    font-size: 2rem;
+    padding: 0px 5px 5px 5px;
+}
 }

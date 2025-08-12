@@ -4,6 +4,8 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px; /* Space between the items */
+    max-width: 90%;
+    margin: auto;
 }
 
 /* Individual patch note item */
