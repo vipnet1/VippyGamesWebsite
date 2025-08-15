@@ -7,6 +7,14 @@ body::before {
     color: white;
 }
 
+.place-sub-title {
+    font-size: 1.875rem;
+}
+
+.ftbDsc {
+    color: gold;
+}
+
 #dscHolder {
     margin-bottom: 200px;
     margin: auto;
@@ -16,8 +24,4 @@ body::before {
 
 #passionDsc {
     font-family: 'Times New Roman', Times, serif;
-}
-
-.place-sub-title {
-    font-size: 1.875rem;
 }

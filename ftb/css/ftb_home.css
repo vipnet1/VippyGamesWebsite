@@ -1,0 +1,67 @@
+body::before {
+    background-image: url("../../images/mount_smaller.png");
+}
+
+.main-trailer {
+    max-width: calc(60vh * 16 / 9);
+    max-height: 60vh;
+    width: calc(60vh * 16 / 9);
+    height: 60vh;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    padding: 0 0 0 0;
+}
+
+.image-with-description {
+  padding-top: 110px;
+  display: flex;
+  align-items: center;
+}
+
+.image-description {
+  margin: 5px;
+  font-size: 2rem;
+  color: white;
+  font-family: consolas;
+  padding: 20px;
+  align-self: flex-start;
+  background-color: rgb(0, 0, 255, 0.5);
+  justify-content: center;
+  line-height: 45px;
+}
+
+.small-image {
+  width: 50vw;
+  height: min(25vw, 60vh);
+}
+
+.notify-reboot-title {
+  background-color: rgb(255, 0, 0, 0.5);
+  color: white;
+}
+
+@media (max-width: 1000px) {
+  .main-trailer {
+      width: 95%;
+      height: calc(95vw * 16 / 9);
+      display: block;
+      margin: 0 auto;
+      border: none;
+      padding: 0 0 0 0;
+  }
+
+  .image-with-description {
+    flex-direction: column; /* Stacks image and text vertically */
+  }
+
+  .image-description {
+    align-self: center; /* Centers the text box */
+  }
+
+  .small-image {
+    width: 95%; /* Make the image take up most of the screen width */
+    height: auto; /* Allow the height to scale proportionally */
+    margin-bottom: 20px; /* Add some space between image and text */
+  }
+}

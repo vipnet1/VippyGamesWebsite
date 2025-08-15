@@ -3,45 +3,55 @@
 <head>
     <title>FTB: Redirection to rooms</title>
     <meta name="description" content="Stickman fight online. Platformer battle arena stick fighter games. Redirection to game rooms."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="../css/stylesheet.css" >
-    <link rel="stylesheet" type="text/css" href="../css/menu.css" >
+    <link rel="stylesheet" type="text/css" href="../css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/covers.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/holders.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/menu.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/neonlight.css" >
+    <link rel="stylesheet" type="text/css" href="css/ftb_redirect.css" >
+    
     <link rel="icon" href="images/ftb_logo.png" type="image/png">
 </head>
 
 <body>
     <nav class="navbar">
+        <a href="../index.html" class="navbar-logo-link">
+            <img src="../images/vippy_games_logo.png" alt="Vippy Games Logo" class="navbar-logo">
+        </a>
         <button class="hamburger-menu">&#9776;</button>
         <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle">FTB</a>
                 <div class="dropdown-content">
-                    <a href="../ftb/index.html">Home</a>
-                    <a href="../ftb/patch-notes/index.html">Patch Notes</a>
+                    <a href="./index.html">Home</a>
+                    <a href="./patch-notes/index.html">Patch Notes</a>
                 </div>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle">About</a>
                 <div class="dropdown-content">
-                    <a href="../index.html#joinAdventure" class="scroll-link">Newsletter</a>
-                    <a href="../index.html#contactHeader" class="scroll-link">Contact</a>
+                    <a href="./index.html#socialHeader" class="scroll-link">Newsletter</a>
+                    <a href="../contact.html">Contact</a>
                     <a target="_blank" href="https://drive.google.com/drive/folders/1lIa9rBfku5IrXSfCyYw1zHRT5wyoIgvw?usp=drive_link">Press Kit</a>
                 </div>
             </li>
         </ul>
     </nav>
 
-    <h1>
-        Stickman Games Online
+    <h1 class="header-cover">
+        Redirection to FTB rooms
     </h1>
 
-    <h1 style="font-size: 30px; color: white;">
-        Redirection to rooms
-    </h1>
+    <p class="cover">
+        Here you can join the game you were invited to. If you are new to FTB it's basically an online platformer fighting game. You may explore this website for more info or download the game below.
+    </p>
 
-    <div id="btnHolder">
-        <a id="gameLink" style="background-color: gold; border-radius: 5px; color:blue;" class="neonLight" draggable="false" href="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle" target="_blank" >
+    <br><br>
+    <div class="btnHolder">
+        <a id="gameLink" class="neonLight" draggable="false" href="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle" target="_blank" >
             <span></span>
             <span></span>
             <span></span>
@@ -51,8 +61,8 @@
 
     <br><br><br><br><br><br><br><br><br>
 
-    <div id="btnHolder">
-        <a style="background-color: yellowgreen; border-radius: 5px; color:blue;" class="neonLight" draggable="false" href="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle" target="_blank" >
+    <div class="btnHolder">
+        <a class="neonLight" draggable="false" href="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle" target="_blank" >
             <span></span>
             <span></span>
             <span></span>
@@ -60,29 +70,40 @@
             Get FTB: Stickman Fight Games</a>
     </div>
 
-    <div id="btnHolder">
-        <a style="background-color: yellowgreen; border-radius: 5px; color:blue;" class="neonLight" draggable="false" href="https://vippy.games/ftb/" >
+    <br><br>
+    <div class="btnHolder">
+        <a class="neonLight" draggable="false" href="./index.html" >
             <span></span>
             <span></span>
             <span></span>
             <span></span>
-            Home</a>
+            FTB Home</a>
     </div>
 
+    <footer>
+        <p class="cover-footer">Any feedback? suggestions? complains?</p>
+        <br>
+        <a class="neonLight" draggable="false" href="mailto:contact@vippy.games" target="_blank">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            contact@vippy.games</a>
+    </footer>
+
     <script src="../js/menu.js"></script>
+    <script>
+        FTB_BASE_URL = "forthebattle://game"
+
+        const url = new URL(window.location.href);
+        const roomName = url.searchParams.get("roomName");
+
+        let urlToOpen = FTB_BASE_URL
+        if (roomName) {
+            urlToOpen += `?roomName=${encodeURIComponent(roomName)}`;
+        }
+
+        document.getElementById('gameLink').href = urlToOpen
+
+    </script>
 </body>
-
-<script>
-    FTB_BASE_URL = "forthebattle://game"
-
-    input_url = window.location.href
-
-    urlToOpen = FTB_BASE_URL
-    if(input_url.includes("?")) {
-        roomName = input_url.split("?")[1]
-        urlToOpen += `?${roomName}`
-    }
-
-    document.getElementById('gameLink').href = urlToOpen
-
-</script>

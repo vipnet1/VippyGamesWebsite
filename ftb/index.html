@@ -3,17 +3,28 @@
 <head>
     <title>FTB: Stickman Fight Games</title>
     <meta name="description" content="Stick man fight online games. Platformer battle arena PvP deathmatch of stick figures."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!--Required for google verification of home page -->
     <meta name="google-site-verification" content="uWXiFitYopuLILhnCQNnwVM7s7nNbIkiYuMm5cKh_A0" />
 
-    <link rel="stylesheet" type="text/css" href="stylesheet.css" >
-    <link rel="stylesheet" type="text/css" href="../css/menu.css" >
+    <link rel="stylesheet" type="text/css" href="../css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/covers.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/custom_link.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/holders.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/menu.css">
+    <link rel="stylesheet" type="text/css" href="../css/common/neonlight.css" >
+    <link rel="stylesheet" type="text/css" href="../css/common/newsletter.css">
+    <link rel="stylesheet" type="text/css" href="css/ftb_home.css" >
+
     <link rel="icon" href="images/ftb_logo.png" type="image/png">
 </head>
 
 <body>
     <nav class="navbar">
+        <a href="../index.html" class="navbar-logo-link">
+            <img src="../images/vippy_games_logo.png" alt="Vippy Games Logo" class="navbar-logo">
+        </a>
         <button class="hamburger-menu">&#9776;</button>
         <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
@@ -21,26 +32,26 @@
                 <a href="#" class="dropdown-toggle">FTB</a>
                 <div class="dropdown-content">
                     <a href="#">Home</a>
-                    <a href="patch-notes/index.html">Patch Notes</a>
+                    <a href="./patch-notes/index.html">Patch Notes</a>
                 </div>
             </li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle">About</a>
                 <div class="dropdown-content">
-                    <a href="../index.html#joinAdventure" class="scroll-link">Newsletter</a>
-                    <a href="../index.html#contactHeader" class="scroll-link">Contact</a>
+                    <a href="#socialHeader" class="scroll-link">Newsletter</a>
+                    <a href="../contact.html">Contact</a>
                     <a target="_blank" href="https://drive.google.com/drive/folders/1lIa9rBfku5IrXSfCyYw1zHRT5wyoIgvw?usp=drive_link">Press Kit</a>
                 </div>
             </li>
         </ul>
     </nav>
 
-    <h1 style="font-size: 4em;">For The Battle</h1>
-    <h2 class="covered" style="font-size: 2em;">
-        <<< The coolest online stickman fighting game out there! >>>
+    <h1 class="huge-text enlarged-title">For The Battle</h1>
+    <h2 class="covered big-text enlarged-content">
+        The coolest online stickman fighting game out there!
     </h2>
-
-    <iframe src="https://www.youtube.com/embed/iNZGUknPSSQ?si=UlpB6yIax2f-aZiz" title="FTB fighter stickman online" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    <iframe class="main-trailer" src="https://www.youtube.com/embed/iNZGUknPSSQ?si=UlpB6yIax2f-aZiz" title="FTB fighter stickman online" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
     <div class="image-with-description">
@@ -59,7 +70,7 @@
 
     <div class="image-with-description">
         <div class="image-description">
-            Large Map | Fun Bots | Many Game Modes | Cool Skins | Cool Abilities. Have fun jumping hitting random stuff.
+            Large Map | Fun Bots | Many Game Modes | Cool Skins | Unique Abilities. Have fun jumping hitting stuff.
         </div>
         <img src="images/image3.jpg" alt="1v1 multiplayer stickman duel. Two fighter stick man battle." class="small-image">
     </div>
@@ -78,25 +89,40 @@
         <img src="images/image5.jpg" alt="FTB stickman fighting stick duel in the battle arena." class="small-image">
     </div>
 
-    <h2 class="covered" style="font-size: 2em; margin-top: 150px;">
+    <br><br><br>
+    <h2 class="header-cover notify-reboot-title">
+        FTB Reboot
+    </h2>
+    <p class="cover notify-reboot-text">
+        We cook a huge update for you! FTB was removed from the Google Play Store and will return soon.
+    </p>
+    <p class="cover notify-reboot-text">
+        With the help of your feedback, we make the game more fun that ever!
+    </p>
+    <p class="cover notify-reboot-text">
+        <a class="custom-link scroll-link" href="#socialHeader">Stay with us</a> and be among the first to witness the big comeback of FTB!
+    </p>
+
+    <br><br><br>
+    <h2 class="header-cover"">
         Links
     </h2>
 
-    <div id="btnHolder">
-        <a class="neonLight covered2" draggable="false" id="btnPatchNotes" href="patch-notes/index.html" target="_blank" >
+    <div class="btnHolder">
+        <a class="neonLight covered2" draggable="false" href="patch-notes/index.html" >
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             Patch Notes</a>
-        <a class="neonLight covered2" draggable="false" id="btnFTB" href="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle" target="_blank" >
+        <a class="neonLight covered2" draggable="false" href="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle" target="_blank" >
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             FTB: Stickman Fight Games</a>
 
-        <a class="neonLight covered2" draggable="false" id="btnBIANIC" href="https://vippy.games/policies/ftb" target="_blank" >
+        <a class="neonLight covered2" draggable="false" href="https://vippy.games/policies/ftb" target="_blank" >
             <span></span>
             <span></span>
             <span></span>
@@ -104,39 +130,66 @@
             Privacy Policy</a>
     </div>
 
-    <h2 class="covered3" style="font-size: 30px; color: gold">
+    <br><br><br>
+    <h2 id="socialHeader" class="subheader-cover">
         Social
     </h2>
 
+    <div class="newsletter-container">
+        <div class="newsletter-card" id="mc_embed_signup">
+            <h3 class="newsletter-header">Subscribe to Our Newsletter</h3>
+            <ul class="newsletter-list">
+                <li>Get exclusive updates and offers.</li>
+                <li>Be the first to know about new products.</li>
+                <li>No spam, we promise.</li>
+            </ul>
+            <form class="newsletter-form" action="https://gmail.us9.list-manage.com/subscribe/post?u=772573de28036bfa54d92aa7c&amp;id=a5bd7b18f9&amp;f_id=00acece3f0" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" method="post" class="validate" target="_blank">
+                <input type="email" autocomplete="email" placeholder="Enter your email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
+                <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display: none; color: orange; font-size: 1.25rem;"></div>
+                    <div class="response" id="mce-success-response" style="display: none; color: greenyellow; font-size: 1.25rem;"></div>
+                </div>
+                <div aria-hidden="true" style="position: absolute; left: -5000px;">
+                    /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
+                    <input type="text" name="b_772573de28036bfa54d92aa7c_a5bd7b18f9" tabindex="-1" value="">
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
 
-    <div id="socialHolder">
-        <h2 class="social">
-            <a class="social-a" style="color: #FF0000" href="https://www.youtube.com/channel/UCVrVe4UqPukz2yYUTCmv-wA" target="_blank">Youtube</a>
-        </h2>
+    <br>
+    <div class="socialHolder">
+        <p class="big-text social">
+            <a class="social-a social-youtube" href="https://www.youtube.com/channel/UCVrVe4UqPukz2yYUTCmv-wA" target="_blank">Youtube</a>
+        </p>
     
-        <h2 class="social">
-            <a class="social-a" style="color: #4267B2" href="https://www.facebook.com/VippyGames" target="_blank">Facebook</a>
-        </h2>
+        <p class="big-text social">
+            <a class="social-a social-facebook" href="https://www.facebook.com/VippyGames" target="_blank">Facebook</a>
+        </p>
     
-        <h2 class="social">
-            <a class="social-a" style="color: #5865F2" href="https://discord.gg/u4nQEq9MWr" target="_blank">Discord</a>
-        </h2>
-        <h2 class="social">
-            <a class="social-a" style="color: #000000" href="https://x.com/vippygames" target="_blank">&nbsp&nbspX&nbsp&nbsp</a>
-        </h2>
-        <h2 class="social">
-            <a class="social-a" style="color: purple" href="https://forthebattle.fandom.com/" target="_blank">Wiki</a>
-        </h2>
+        <p class="big-text social">
+            <a class="social-a social-discord" href="https://discord.gg/u4nQEq9MWr" target="_blank">Discord</a>
+        </p>
+        <p class="big-text social">
+            <a class="social-a social-x" href="https://x.com/vippygames" target="_blank">&nbsp&nbspX&nbsp&nbsp</a>
+        </p>
+        <p class="big-text social">
+            <a class="social-a social-wiki" href="https://forthebattle.fandom.com/" target="_blank">Wiki</a>
+        </p>
     </div>
 
     <footer>
-        <h2>Any feedback? suggestions? complains?</h2>
-        <a class="neonLight covered2" draggable="false" href="mailto:contact@vippy.games" target="_blank">
+        <p class="cover-footer">Any feedback? suggestions? complains?</p>
+        <br>
+        <a class="neonLight" draggable="false" href="mailto:contact@vippy.games" target="_blank">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             contact@vippy.games</a>
-      </footer>
-      <script src="../js/menu.js"></script>
+    </footer>
+    <script src="../js/menu.js"></script>
+    <script type="text/javascript" src="https://s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script><script type="text/javascript">(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';fnames[6]='COMPANY';ftypes[6]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+
 </body>

@@ -26,10 +26,7 @@ body::before {
     align-items: center;
     font-size: 2rem;
     text-align: center;
-}
-
-.enlarged-title {
-    font-size: 3.5rem;
+    max-width: 97%;
 }
 
 .big-text {
@@ -43,6 +40,19 @@ body::before {
     justify-content: center;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
+    max-width: 97%;
+}
+
+.enlarged-title {
+    font-size: 3.5rem;
+}
+
+.enlarged-subtitle {
+    font-size: 2.75rem;
+}
+
+.enlarged-content {
+    font-size: 2rem;
 }
 
 .visually-hidden {

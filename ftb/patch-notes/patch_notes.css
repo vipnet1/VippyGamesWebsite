@@ -1,15 +1,10 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
     color: #f0f0f0;
 }
 
-/* Page title */
-h1 {
-    text-align: center;
-    color: #ffffff;
-    margin-bottom: 40px;
-    font-size: 40px;
+body::before {
+    background-image: url("../../images/mount_smaller.png");
 }
 
 /* Container for the patch notes grid */
@@ -28,6 +23,7 @@ h1 {
     overflow: hidden; /* Ensures the image corners are rounded */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 95%;
 }
 
 /* Hover effect for the item */
