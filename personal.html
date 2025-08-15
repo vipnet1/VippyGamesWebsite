@@ -3,18 +3,25 @@
 <head>
     <title>Vippy Games</title>
     <meta name="description" content="Vippy Games official website. Personal space."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" >
-    <link rel="stylesheet" type="text/css" href="menu/menu.css" >
-    <link rel="stylesheet" type="text/css" href="css/menu.css" >
+    <link rel="stylesheet" type="text/css" href="css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="css/common/covers.css">
+    <link rel="stylesheet" type="text/css" href="css/common/holders.css">
+    <link rel="stylesheet" type="text/css" href="css/common/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/common/neonlight.css" >
+    <link rel="stylesheet" type="text/css" href="css/personal.css" >
     <link rel="icon" href="images/vippy_games_logo.png" type="image/png">
 </head>
 
 <body>
     <nav class="navbar">
+        <a href="./index.html" class="navbar-logo-link">
+            <img src="images/vippy_games_logo.png" alt="Vippy Games Logo" class="navbar-logo">
+        </a>
         <button class="hamburger-menu">&#9776;</button>
         <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle">FTB</a>
                 <div class="dropdown-content">
@@ -25,37 +32,36 @@
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle">About</a>
                 <div class="dropdown-content">
-                    <a href="index.html#joinAdventure" class="scroll-link">Newsletter</a>
-                    <a href="index.html#contactHeader" class="scroll-link">Contact</a>
+                    <a href="./index.html#joinAdventure" class="scroll-link">Newsletter</a>
+                    <a href="./contact.html" class="scroll-link">Contact</a>
                     <a target="_blank" href="https://drive.google.com/drive/folders/1lIa9rBfku5IrXSfCyYw1zHRT5wyoIgvw?usp=drive_link">Press Kit</a>
                 </div>
             </li>
         </ul>
     </nav>
 
-    <h1>Vippy Games</h1>
+    <h1 class="huge-text">Vippy Games</h1>
 
-    <div id="dscHolder">
-        <h2>
-            Hi everyone! The real name is Timur, nice to meet you!
-        </h2>
-        <h2>
+    <div id="dscHolder" class="big-text">
+        <p>
+            Hi everyone! The real name is Timur, nice to meet you!<br>
             I'm a (graduated) student, gamer, developer and as a hobby - game dev!
-        </h2>
+        </p>
     </div>
 
-    <h2 id="txtOnPlayStore">
+    <br><br><br><br><br><br>
+    <h2 class="big-text place-title">
         On Play Store
     </h2>
     
-    <h2 style="font-size: 30px;">
+    <h3 class="big-text place-sub-title">
         For The Battle
-    </h2>
-    <h2 style="color: gold">- Stickman fight online in huge battle arena -</h2>
-    <h2 style="color: gold">- Bring friends for deathmatch, battle royale, duels and other fun game modes -</h2>
-    <h2 style="color: gold">- Game of stickmen multiplayer 2D platformer games -</h2>
+    </h3>
+    <h4 class="big-text" style="color: gold">- Stickman fight online in huge battle arena -</h4>
+    <h4 class="big-text" style="color: gold">- Bring friends for deathmatch, battle royale, duels and other fun game modes -</h4>
+    <h4 class="big-text" style="color: gold">- Game of stickmen multiplayer 2D platformer games -</h4>
 
-    <div id="btnHolder">
+    <div class="btnHolder">
         <a class="neonLight" draggable="false" id="btnFTBStore" href="https://play.google.com/store/apps/details?id=com.VippyGames.ForTheBattle" target="_blank" >
             <span></span>
             <span></span>
@@ -71,10 +77,11 @@
             Details</a>
     </div>
 
-    <h2 style="font-size: 30px;">
+    <br><br><br>
+    <h2 class="big-text" style="font-size: 30px;">
         More apps
     </h2>
-    <div id="btnHolder">
+    <div class="btnHolder">
         <a class="neonLight" draggable="false" id="btnBIANIC" href="https://play.google.com/store/apps/details?id=com.vippygames.bianic" target="_blank" >
             <span></span>
             <span></span>
@@ -97,11 +104,12 @@
             Mapnector</a>
     </div>
 
-    <h2 id="txtOnPlayStore">
+    <br><br>
+    <h2 class="big-text place-title">
         Other
     </h2>
 
-    <div id="btnHolder">
+    <div class="btnHolder">
         <a class="neonLight" draggable="false" id="btnItchIo" href="https://vipnet.itch.io/" target="_blank" >
             <span></span>
             <span></span>
@@ -117,19 +125,21 @@
             Github</a>
     </div>
 
-    <h2 style="font-size: 30px; color: gold">
+    <br><br>
+    <p id="passionDsc" class="huge-text">
         Passionate about creating fun games & useful tools
-    </h2>
+    </p>
 
     <footer>
-        <h2>Any feedback? suggestions? complains?</h2>
+        <p class="cover-footer">Any feedback? suggestions? complains?</p>
+        <br>
         <a class="neonLight" draggable="false" href="mailto:contact@vippy.games" target="_blank">
             <span></span>
             <span></span>
             <span></span>
             <span></span>
             contact@vippy.games</a>
-      </footer>
+    </footer>
 
       <script src="js/menu.js"></script>
 </body>

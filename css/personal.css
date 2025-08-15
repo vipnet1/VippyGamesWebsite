@@ -2,11 +2,22 @@ body::before {
     background-image: url("../images/mount_smaller.png");
 }
 
-#txtOnPlayStore {
-    font-size: 40px;
+.place-title {
+    font-size: 2.5rem;
     color: white;
 }
 
 #dscHolder {
     margin-bottom: 200px;
+    margin: auto;
+    text-shadow: 1px 1px #000000;
+    line-height: 2;
+}
+
+#passionDsc {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.place-sub-title {
+    font-size: 1.875rem;
 }

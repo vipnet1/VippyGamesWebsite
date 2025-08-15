@@ -1,20 +1,20 @@
-a.policy_link:link {
+a.custom-link:link {
   color: lightgreen;
   background-color: transparent;
 }
 
-a.policy_link:visited {
+a.custom-link:visited {
   color: lightgreen;
   background-color: transparent;
 }
 
-a.policy_link:hover {
+a.custom-link:hover {
   color: white;
   background-color: transparent;
   text-decoration: underline;
 }
 
-a.policy_link:active {
+a.custom-link:active {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;

@@ -19,18 +19,26 @@ body::before {
 .huge-text {
     color: yellow;
     padding: 0;
-    margin: 10px 10px 60px 10px;
     justify-content: center;
     display: flex;
-    font-family: consolas;
+    font-family: consolas, 'Times New Roman', Times, serif;
     font-weight: bold;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
 }
 
 .big-text {
     color: aqua;
-    display: flex;
     justify-content: center;
+    display: flex;
+    align-items: center;
     font-weight: bold;
+    font-size: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
 }
 
 .visually-hidden {
