@@ -28,6 +28,10 @@ body::before {
     text-align: center;
 }
 
+.enlarged-title {
+    font-size: 3.5rem;
+}
+
 .big-text {
     color: aqua;
     justify-content: center;

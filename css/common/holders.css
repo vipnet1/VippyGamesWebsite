@@ -14,6 +14,10 @@
     flex-wrap: wrap;
 }
 
+.socialHolder p {
+    margin: 0;
+}
+
 .social-a {
     text-decoration: none;
 }
@@ -25,7 +29,6 @@
     font-size: 2.5rem;
     display: inline-block;
     justify-content: center;
-    /* margin: 30px 50px 30px 50px; */
 }
 
 .social:hover {

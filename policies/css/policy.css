@@ -1,0 +1,26 @@
+body::before {
+    background-image: url("../../images/mount_smaller.png");
+}
+
+.cover {
+    min-height: 0px;
+    margin: 10px 10px 0px 10px;
+}
+
+.header-cover {
+    min-height: 0px;
+    margin: 40px 10px 10px 10px;
+}
+
+.subheader-cover {
+    min-height: 0px;
+    margin: 20px 10px 10px 10px;
+    font-size: 2.4rem;
+}
+
+@media (max-width: 768px) {
+    .subheader-cover {
+        font-size: 2.1rem;
+        padding: 0px 5px 5px 5px;
+    }
+}
