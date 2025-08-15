@@ -26,7 +26,6 @@ body::before {
     align-items: center;
     font-size: 2rem;
     text-align: center;
-    max-width: 97%;
 }
 
 .big-text {
@@ -40,7 +39,6 @@ body::before {
     justify-content: center;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
-    max-width: 97%;
 }
 
 .enlarged-title {

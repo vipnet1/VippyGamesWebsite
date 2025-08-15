@@ -4,7 +4,7 @@ body {
 }
 
 body::before {
-    background-image: url("../../images/mount_smaller.png");
+    background-image: url("../../images/mount_smaller.avif");
 }
 
 /* Container for the patch notes grid */
@@ -53,21 +53,21 @@ body::before {
 }
 
 /* Patch version title */
-.patch-info h3 {
+.patch-info h2 {
     margin: 0 0 10px 0;
     color: #00aaff;
 }
 
 /* Date of the patch */
 .patch-info .date {
-    font-size: 0.9em;
+    font-size: 1rem;
     color: #aaaaaa;
     margin: 0 0 15px 0;
 }
 
 /* Short description of the patch */
 .patch-info .description {
-    font-size: 1em;
+    font-size: 1.2rem;
     line-height: 1.4;
     color: #dddddd;
     margin: 0;
