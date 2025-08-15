@@ -1,0 +1,46 @@
+#btnHolder {
+    display: block;
+    text-align: center;
+}
+
+#socialHolder {
+    display: block;
+    text-align: center;
+}
+
+.social-a {
+    text-decoration: none;
+}
+
+.social {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 30px;
+    display: inline-block;
+    justify-content: center;
+    margin: 30px 50px 30px 50px;
+}
+
+.social:hover {
+    color: white;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,
+    0 0 80px #2196f3;
+}
+
+.social-youtube {
+    color: #FF0000;
+}
+
+.social-facebook {
+    color: #4267B2;
+}
+
+.social-discord {
+    color: #5865F2;
+}
+
+.social-x {
+    color: #000000;
+}

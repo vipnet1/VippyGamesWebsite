@@ -7,6 +7,17 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+.navbar-logo-link {
+    position: absolute;
+    left: 5px;
+    height: 80px;
+    z-index: 200;
+}
+
+.navbar-logo {
+    height: 100%;
+}
+
 .nav-links {
     list-style: none;
     display: flex;

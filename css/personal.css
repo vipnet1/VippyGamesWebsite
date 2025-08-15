@@ -1,0 +1,12 @@
+body::before {
+    background-image: url("../images/mount_smaller.png");
+}
+
+#txtOnPlayStore {
+    font-size: 40px;
+    color: white;
+}
+
+#dscHolder {
+    margin-bottom: 200px;
+}

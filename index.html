@@ -5,16 +5,24 @@
     <meta name="description" content="Vippy Games official website. Creator of FTB, stick fight games PvP battle arena."/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css" >
-    <link rel="stylesheet" type="text/css" href="css/home/games_list.css" >
-    <link rel="stylesheet" type="text/css" href="css/home/newsletter.css" >
-    <link rel="stylesheet" type="text/css" href="css/home/covers.css" >
-    <link rel="stylesheet" type="text/css" href="css/menu.css" >
+    <link rel="stylesheet" type="text/css" href="css/common/base.css">
+    <link rel="stylesheet" type="text/css" href="css/common/covers.css">
+    <link rel="stylesheet" type="text/css" href="css/common/games_list.css">
+    <link rel="stylesheet" type="text/css" href="css/common/holders.css">
+    <link rel="stylesheet" type="text/css" href="css/common/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/common/neonlight.css" >
+    <link rel="stylesheet" type="text/css" href="css/common/newsletter.css" >
+    <link rel="stylesheet" type="text/css" href="css/home.css" >
     <link rel="icon" href="images/vippy_games_logo.png" type="image/png">
 </head>
 
 <body>
+    <h1 class="visually-hidden">Vippy Games</h1>
+
     <nav class="navbar">
+        <a href="#" class="navbar-logo-link">
+            <img src="images/vippy_games_logo.png" alt="Vippy Games Logo" class="navbar-logo">
+        </a>
         <button class="hamburger-menu">&#9776;</button>
         <ul class="nav-links">
             <li><a href="#">Home</a></li>
@@ -29,7 +37,7 @@
                 <a href="#" class="dropdown-toggle">About</a>
                 <div class="dropdown-content">
                     <a href="#joinAdventure" class="scroll-link">Newsletter</a>
-                    <a href="#contactHeader" class="scroll-link">Contact</a>
+                    <a href="./contact.html" class="scroll-link">Contact</a>
                     <a target="_blank" href="https://drive.google.com/drive/folders/1lIa9rBfku5IrXSfCyYw1zHRT5wyoIgvw?usp=drive_link">Press Kit</a>
                 </div>
             </li>
@@ -37,8 +45,8 @@
     </nav>
 
     <br>
-    <div class="container" style="text-align: center;">
-        <img id="vippyGamesLogo" src="images/vippy_games_logo.png" alt="Vippy Games Logo">
+    <div class="main-logo-container">
+        <img class="main-logo" src="images/vippy_games_logo.png" alt="Vippy Games Logo">
     </div>
 
     <br><br><br>
@@ -46,27 +54,26 @@
         <div class="game-list-item">
             <a href="https://vippy.games/ftb">
                 <img src="images/ftb_capsule.png" alt="Patch notes 2.7">
-                <h1 style="margin: 5px">For The Battle</h1>
+                <h2 class="game-list-name">For The Battle</h2>
             </a>
         </div>
-
     </div>
 
     <br><br><br>
-    <h1 class="header_cover">
+    <h2 class="header-cover">
         Dedicated To Creating Exceptional Experiences
-    </h1>
+    </h2>
     <p class="cover">
         From fun games to intuitive apps. Our work is driven by a deep passion for what we do and a belief that the best products are built with community feedback - to deliver the best creations possible.
     </p>
 
     <br><br><br>
-    <h1 id="joinAdventure" class="subheader_cover" style="background-color: rgb(255, 0, 0, 0.3);">
+    <h2 id="joinAdventure" class="subheader-cover about-us-cover">
     Join The Adventure
-    </h1>
+    </h2>
     <div class="newsletter-container">
         <div class="newsletter-card" id="mc_embed_signup">
-            <h2>Subscribe to Our Newsletter</h2>
+            <h3 class="newsletter-header">Subscribe to Our Newsletter</h3>
             <ul class="newsletter-list">
                 <li>Get exclusive updates and offers.</li>
                 <li>Be the first to know about new products.</li>
@@ -75,8 +82,8 @@
             <form class="newsletter-form" action="https://gmail.us9.list-manage.com/subscribe/post?u=772573de28036bfa54d92aa7c&amp;id=a5bd7b18f9&amp;f_id=00acece3f0" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" method="post" class="validate" target="_blank">
                 <input type="email" placeholder="Enter your email" name="EMAIL" class="required email" id="mce-EMAIL" required="" value="">
                 <div id="mce-responses" class="clear foot">
-                    <div class="response" id="mce-error-response" style="display: none; color: white; font-size: 20px;"></div>
-                    <div class="response" id="mce-success-response" style="display: none; color: white; font-size: 20px;"></div>
+                    <div class="response" id="mce-error-response" style="display: none; color: orange; font-size: 1.25rem;"></div>
+                    <div class="response" id="mce-success-response" style="display: none; color: greenyellow; font-size: 1.25rem;"></div>
                 </div>
                 <div aria-hidden="true" style="position: absolute; left: -5000px;">
                     /* real people should not fill this in and expect good things - do not remove this or risk form bot signups */
@@ -87,26 +94,26 @@
         </div>
     </div>
     <div id="socialHolder">
-        <h2 class="social">
-            <a class="social_a" style="color: #FF0000" href="https://www.youtube.com/channel/UCVrVe4UqPukz2yYUTCmv-wA" target="_blank">Youtube</a>
-        </h2>
+        <p class="big-text social">
+            <a class="social-a social-youtube" href="https://www.youtube.com/channel/UCVrVe4UqPukz2yYUTCmv-wA" target="_blank">Youtube</a>
+        </p>
     
-        <h2 class="social">
-            <a class="social_a" style="color: #4267B2" href="https://www.facebook.com/VippyGames" target="_blank">Facebook</a>
-        </h2>
+        <p class="big-text social">
+            <a class="social-a social-facebook" href="https://www.facebook.com/VippyGames" target="_blank">Facebook</a>
+        </p>
     
-        <h2 class="social">
-            <a class="social_a" style="color: #5865F2" href="https://discord.gg/u4nQEq9MWr" target="_blank">Discord</a>
-        </h2>
-        <h2 class="social">
-            <a class="social_a" style="color: #000000" href="https://x.com/vippygames" target="_blank">&nbsp&nbspX&nbsp&nbsp</a>
-        </h2>
+        <p class="big-text social">
+            <a class="social-a social-discord" href="https://discord.gg/u4nQEq9MWr" target="_blank">Discord</a>
+        </p>
+        <p class="big-text social">
+            <a class="social-a social-x" href="https://x.com/vippygames" target="_blank">&nbsp&nbspX&nbsp&nbsp</a>
+        </p>
     </div>
 
     <br><br><br>
-    <h1 id="contactHeader" class="subheader_cover">
+    <h2 class="subheader-cover">
         About Us
-    </h1>
+    </h2>
     <p class="cover">
         My name is Timur, and I'm a 22-year old hardcore gamer who loves everything related to computers. Since starting my B.Sc. in computer science until now, as a finished graduate working as a software engineer, I've enjoyed creating games.
     </p>
@@ -116,7 +123,8 @@
 
 
     <footer>
-        <h2>Any feedback? suggestions? complains?</h2>
+        <p class="cover-footer">Any feedback? suggestions? complains?</p>
+        <br>
         <a class="neonLight" draggable="false" href="mailto:contact@vippy.games" target="_blank">
             <span></span>
             <span></span>

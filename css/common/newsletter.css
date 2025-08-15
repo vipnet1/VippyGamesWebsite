@@ -4,41 +4,41 @@
     justify-content: center;
     align-items: center;
     min-height: 400px;
-    padding: 1.25rem; /* 20px -> 1.25rem */
+    padding: 20px;
 }
 
 /* Style for the card itself */
 .newsletter-card {
     background: darkslateblue;
-    border-radius: 0.75rem; /* 12px -> 0.75rem */
-    box-shadow: 0 0.625rem 1.875rem rgba(0, 0, 0, 0.1); /* 0 10px 30px -> 0 0.625rem 1.875rem */
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 2.5rem; /* 40px -> 2.5rem */
+    padding: 20px 40px;
     width: 100%;
-    max-width: 56.25rem; /* 900px -> 56.25rem */
+    max-width: 900px;
 }
 
-.newsletter-card h2 {
+.newsletter-header {
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    font-size: 2.25rem; /* 36px -> 2.25rem */
+    font-size: 2rem;
     color: white;
-    margin-bottom: 1.875rem; /* 30px -> 1.875rem */
+    margin-bottom: 30px;
     margin-top: 0;
-    text-align: left;
+    text-align: center;
 }
 
 /* Styling for the form and its elements */
 .newsletter-form {
     display: flex;
     flex-direction: column;
-    gap: 0.9375rem; /* 15px -> 0.9375rem */
+    gap: 15px;
 }
 
 .newsletter-form input {
     padding: 25px 20px;
     border: 1px solid #ddd;
-    border-radius: 0.5rem; /* 8px -> 0.5rem */
-    font-size: 1.5rem; /* 24px -> 1.5rem */
+    border-radius: 8px;
+    font-size: 1.5rem;
     width: 100%;
     box-sizing: border-box;
     transition: border-color 0.3s ease;
@@ -54,8 +54,8 @@
     color: #ffffff;
     border: none;
     padding: 25px 20px;
-    border-radius: 0.5rem; /* 8px -> 0.5rem */
-    font-size: 2.25rem; /* 36px -> 2.25rem */
+    border-radius: 8px;
+    font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
@@ -63,7 +63,7 @@
 
 .newsletter-form button:hover {
     background-color: #4343d3;
-    transform: translateY(-0.125rem); /* -2px -> -0.125rem */
+    transform: translateY(-2px);
 }
 
 /* Styling for the new unordered list */
@@ -72,39 +72,39 @@
     list-style-type: disc;
     margin: 0;
     padding: 0;
-    margin-bottom: 1.25rem; /* 20px -> 1.25rem */
+    margin-bottom: 20px
 }
 
 .newsletter-list li {
     font-family: Arial, sans-serif;
-    font-size: 1.5rem; /* 24px -> 1.5rem */
+    font-size: 1.5rem;
     color: white;
-    margin-bottom: 0.625rem; /* 10px -> 0.625rem */
+    margin-bottom: 10px;
     line-height: 1.5;
-    margin-left: 1.25rem; /* 20px -> 1.25rem */
+    margin-left: 20px;
 }
 
 @media (max-width: 768px) {
     .newsletter-container {
-        min-height: 400px;
-        width: 90%;
+        width: calc(100% - 10px);
+        padding: 5px;
     }
 
     .newsletter-card {
-        padding: 10px;
+        padding: 20px 10px;
         width: 100%;
-        max-width: 56.25rem; /* 900px -> 56.25rem */
+        max-width: 100%;
     }
 
-    .newsletter-card h2 {
-        font-size: 2rem; /* 36px -> 2.25rem */
+    .newsletter-header {
+        font-size: 2rem;
         text-align: center;
     }
 
     .newsletter-list li {
-        font-size: 1.5rem; /* 24px -> 1.5rem */
+        font-size: 1.5rem;
         color: white;
-        margin-bottom: 0.625rem; /* 10px -> 0.625rem */
-        margin-left: 20px; /* 20px -> 1.25rem */
+        margin-bottom: 10px;
+        margin-left: 20px;
     }
 }

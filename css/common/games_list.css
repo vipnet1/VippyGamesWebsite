@@ -38,3 +38,16 @@
     object-fit: fill; /* Ensures the image covers the area without distortion */
     display: block;
 }
+
+.game-list-name {
+    color: yellow;
+    padding: 0;
+    margin: 10px 10px 60px 10px;
+    justify-content: center;
+    display: flex;
+    font-family: consolas;
+    margin: 5px;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: bold;
+}

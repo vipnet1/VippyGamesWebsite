@@ -1,0 +1,19 @@
+body::before {
+    background-image: url("../images/mount_smaller.png");
+}
+
+.main-logo-container {
+    text-align: center;
+}
+
+.main-logo {
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 auto;
+}
+
+.about-us-cover {
+    background-color: rgb(255, 0, 0, 0.3);
+}
