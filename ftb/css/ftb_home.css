@@ -96,11 +96,13 @@ body::before {
   background-color: rgb(0, 0, 255, 0.5);
   justify-content: center;
   line-height: 45px;
+  border-radius: 20px;
 }
 
 .small-image {
   width: 50vw;
   height: min(25vw, 60vh);
+  border-radius: 20px;
 }
 
 .notify-reboot-title {
