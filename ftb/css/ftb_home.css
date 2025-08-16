@@ -1,3 +1,35 @@
+@font-face {
+  font-family: 'DynaPuff';
+  src: url('../../fonts/DynaPuff/static/DynaPuff-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DynaPuff';
+  src: url('../../fonts/DynaPuff/static/DynaPuff-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playpen_Sans';
+  src: url('../../fonts/Playpen_Sans/static/PlaypenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Playpen_Sans';
+  src: url('../../fonts/Playpen_Sans/static/PlaypenSans-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 body::before {
     background-image: url("../../images/mount_smaller.avif");
 }
@@ -58,7 +90,7 @@ body::before {
   margin: 5px;
   font-size: 2rem;
   color: white;
-  font-family: consolas;
+  font-family: 'Playpen_Sans', Arial, sanf-serif;
   padding: 20px;
   align-self: flex-start;
   background-color: rgb(0, 0, 255, 0.5);

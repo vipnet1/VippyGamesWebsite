@@ -40,12 +40,12 @@
 }
 
 .game-list-name {
-    color: yellow;
+    color: white;
     padding: 0;
     margin: 10px 10px 60px 10px;
     justify-content: center;
     display: flex;
-    font-family: consolas;
+    font-family: 'DynaPuff', Arial, sanf-serif;
     margin: 5px;
     text-align: center;
     font-size: 2.25rem;

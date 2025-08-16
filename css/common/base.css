@@ -21,7 +21,7 @@ body::before {
     padding: 0;
     justify-content: center;
     display: flex;
-    font-family: consolas, 'Times New Roman', Times, serif;
+    font-family: 'DynaPuff', Arial, sanf-serif;
     font-weight: bold;
     align-items: center;
     font-size: 2rem;
@@ -38,7 +38,7 @@ body::before {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Playpen_Sans', Arial, sanf-serif;
 }
 
 .enlarged-title {
