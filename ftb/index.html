@@ -12,8 +12,6 @@
     <link rel="stylesheet" type="text/css" href="css/ftb_home.css" >
 
     <link rel="icon" href="images/ftb_logo.avif">
-
-    <script type="module" src="https://vippy.games/js/lite-youtube.custom.js"></script>
 </head>
 
 <body>
@@ -47,7 +45,15 @@
         The coolest online stickman fighting game out there!
     </h2>
     
-    <lite-youtube autopause="true" videotitle="FTB fighter stickman online" nocookie="true" class="main-trailer" videoid="iNZGUknPSSQ"></lite-youtube>
+    <div class="main-trailer">
+        <button title="play">
+            <svg class="play-icon" xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512">
+            <path d="M256 48C141.31 48 48 141.31 48 256s93.31 208 208 208 208-93.31 208-208S370.69 48 256 48zm-56 296V168l144 88z" fill="currentColor" />
+            </svg>
+            <img decoding="async" alt="For The Battle stickman online" src="https://i3.ytimg.com/vi/iNZGUknPSSQ/maxresdefault.jpg" />
+        </button>
+        <iframe src="about:blank" data-src="https://www.youtube-nocookie.com/embed/iNZGUknPSSQ?si=RqfqxQ6slxUOFhdL" title="FTB fighter stickman online" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
 
     <div class="image-with-description">
         <div class="image-description">
@@ -186,5 +192,20 @@
     </footer>
     <script src="../js/menu.js"></script>
     <script src="../js/newsletter-load.js"></script>
+    <script>
+        const YoutubeEmbed = (el)=>{
+        const playButton = el.querySelector('button');
+        const iframe = el.querySelector('iframe');
+        playButton.addEventListener('click', ()=>{
+            iframe.src = iframe.dataset.src;
+            playButton.style.display = 'none';
+        });
+        }
+
+        const youtubeEmbeds = document.querySelectorAll('.main-trailer');
+        youtubeEmbeds.forEach(youtubeEmbed=>{
+        YoutubeEmbed(youtubeEmbed);
+        })
+    </script>
 </body>
 </html>
