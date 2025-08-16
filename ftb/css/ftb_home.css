@@ -14,7 +14,7 @@ body::before {
     --button-size: 6rem;
     position: relative;
     color: #fff;
-    background:#000;
+    background:rgba(0, 255, 255, 0.5);
 
     button {
       all: unset;
@@ -35,8 +35,14 @@ body::before {
       position: absolute;
       top: calc(50% - (var(--button-size) / 2));
       left: calc(50% - (var(--button-size) / 2));
+      z-index: 10;
     }
-    iframe, img {
+    img {
+      width: 95%;
+      transform: translate(2.5%, 0);
+      height: calc(var(width) * 9 / 16);
+    }
+    iframe {
       height: 100%;
       width: 100%;
     }
