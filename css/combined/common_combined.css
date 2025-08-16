@@ -1,0 +1,670 @@
+body {
+    background-color: #000000; /* Your solid black background */
+    position: relative; /* Essential for positioning the pseudo-element correctly */
+    margin: 0;
+    min-height: 100vh;
+    /* No background-image or opacity directly on body */
+}
+
+/* This creates a new "layer" specifically for your background image */
+body::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute; /* Allows precise positioning relative to the body */
+    width: 100%;
+    height: 100%;
+    opacity: 0.7; /* <--- THIS IS WHERE YOU CONTROL THE IMAGE'S TRANSPARENCY */
+    z-index: -1; /* Puts this pseudo-element layer BEHIND your body's content */
+}
+
+.huge-text {
+    color: yellow;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    font-family: consolas, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    align-items: center;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.big-text {
+    color: aqua;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.enlarged-title {
+    font-size: 3.5rem;
+}
+
+.enlarged-subtitle {
+    font-size: 2.75rem;
+}
+
+.enlarged-content {
+    font-size: 2rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+footer {
+    margin-top: 120px;
+    text-align: center;
+    padding: 3px;
+    color: white;
+}
+
+.header-cover {
+    color: yellow;
+    font-size: 2.8rem;
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+    display: flex;
+    font-family: consolas;
+    background-color: rgb(0, 255, 0, 0.3);
+    padding: 20px;
+    line-height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    align-items: center;
+    min-height: 100px;
+}
+
+.subheader-cover {
+    color: white;
+    font-size: 2.8rem;
+    margin: 10px 10px 10px 10px;
+    justify-content: center;
+    display: flex;
+    background-color: rgb(255, 0, 255, 0.3);
+    padding: 20px;
+    font-family: consolas;
+    line-height: 45px;
+    border-radius: 5px;
+    text-align: center;
+    min-height: 100px;
+    align-items: center;
+}
+
+.cover {
+    color: white;
+    margin: 0px 5px 10px 5px;
+    justify-content: center;
+    display: flex;
+    font-size: 2.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(0, 0, 255, 0.5);
+    line-height: 45px;
+    padding: 20px;
+    text-align: left;
+    display: inline-block;
+    border-radius: 5px;
+    align-items: center;
+}
+
+.cover-footer {
+    color: white;
+    margin: 0px 5px 10px 5px;
+    justify-content: center;
+    display: flex;
+    font-size: 1.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(0, 140, 255, 0.5);
+    line-height: 45px;
+    padding: 10px 20px;
+    text-align: left;
+    display: inline-block;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center;
+    height: max-content;
+}
+
+@media (max-width: 768px) {
+    .header-cover {
+        font-size: 2.4rem;
+        padding: 0px 5px 5px 5px;
+    }
+
+    .cover {
+        font-size: 1.6rem;
+        padding: 0px 5px 5px 5px;
+    }
+
+    .cover-footer {
+        font-size: 1.4rem;
+        padding: 0px 10px;
+    }
+
+    .subheader-cover {
+        font-size: 2.4rem;
+        padding: 0px 5px 5px 5px;
+    }
+}
+
+a.custom-link:link {
+  color: lightgreen;
+  background-color: transparent;
+}
+
+a.custom-link:visited {
+  color: lightgreen;
+  background-color: transparent;
+}
+
+a.custom-link:hover {
+  color: white;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+a.custom-link:active {
+  color: yellow;
+  background-color: transparent;
+  text-decoration: underline;
+}
+
+/* Container for the patch notes grid */
+.game-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px; /* Space between the items */
+    max-width: 90%;
+    margin: auto;
+}
+
+/* Individual patch note item */
+.game-list-item {
+    width: 400px; /* Width of each item */
+    background-color: darkblue;
+    border-radius: 10px;
+    overflow: hidden; /* Ensures the image corners are rounded */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the item */
+.game-list-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Making the whole item clickable */
+.game-list-item a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Patch note image */
+.game-list-item img {
+    width: 100%;
+    height: 500px;
+    object-fit: fill; /* Ensures the image covers the area without distortion */
+    display: block;
+}
+
+.game-list-name {
+    color: yellow;
+    padding: 0;
+    margin: 10px 10px 60px 10px;
+    justify-content: center;
+    display: flex;
+    font-family: consolas;
+    margin: 5px;
+    text-align: center;
+    font-size: 2.25rem;
+    font-weight: bold;
+}
+
+
+.btnHolder {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.socialHolder {
+    display: flex;
+    justify-content: space-around;
+    gap: 25px;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.socialHolder p {
+    margin: 0;
+}
+
+.social-a {
+    text-decoration: none;
+}
+
+.social {
+    background-color: orange;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 2.5rem;
+    display: inline-block;
+    justify-content: center;
+}
+
+.social:hover {
+    color: white;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,
+    0 0 80px #2196f3;
+}
+
+.social-youtube {
+    color: #FF0000;
+}
+
+.social-facebook {
+    color: #4267B2;
+}
+
+.social-discord {
+    color: #5865F2;
+}
+
+.social-x {
+    color: #000000;
+}
+
+.social-wiki {
+    color: purple;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkblue;
+    padding: 15px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-logo-link {
+    position: absolute;
+    left: 5px;
+    height: 80px;
+    z-index: 200;
+}
+
+.navbar-logo {
+    height: 100%;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    position: relative;
+    padding: 0 25px;
+}
+
+.nav-links a {
+    color: #f4f4f4;
+    text-decoration: none;
+    font-size: 2rem;
+    font-family: consolas;
+    font-weight: bold;
+    display: block;
+    padding: 10px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #00aaff;
+}
+
+.nav-links a:active {
+    color: #ff0077;
+}
+
+/* --- Arrow Styling --- */
+.dropdown > a.dropdown-toggle {
+    position: relative;
+    margin-right: 5px;
+    padding-right: 25px; /* Add space for the arrow */
+}
+
+.dropdown > a.dropdown-toggle::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%) rotate(0deg);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #f4f4f4; /* Creates the down-pointing triangle */
+    transition: transform 0.3s ease;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #00155c;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+    border-radius: 5px;
+    overflow: hidden;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.dropdown-content a {
+    color: #ddd;
+    padding: 15px 20px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.7rem;
+    font-family: consolas;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+    background-color: #0077cc;
+    color: white;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.hamburger-menu {
+    display: none; /* This hides the button on all screen sizes initially */
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 4.5rem;
+    z-index: 101;
+}
+
+/* --- Mobile Menu Styles --- */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: right;
+        padding: 0px;
+    }
+
+    .hamburger-menu {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #00155c;
+        padding: 10px 0;
+        z-index: 100;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 0;
+        width: 100%;
+    }
+
+    .nav-links a {
+        padding: 30px 15px;
+        font-size: 40px;
+    }
+
+    .dropdown > a.dropdown-toggle {
+        padding-right: 15px;
+    }
+
+    .dropdown-content {
+        position: static;
+        min-width: 100%;
+        background-color: darkblue;
+        box-shadow: none;
+        transform: none;
+        text-align: center;
+    }
+}
+
+.neonLight {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    color: #2196f3;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 1.6rem;
+    overflow: hidden;
+    transition: 0.2s;
+    background-color: rgb(0, 0, 128, 0.7);
+    width: max-content;
+    max-width: 95%;
+    overflow-wrap: break-word;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+}
+
+.neonLight:hover {
+    color: #255784;
+    background: #2196f3;
+    box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3,
+    0 0 80px #2196f3;
+    transition-delay: 1s;
+}
+
+.neonLight span {
+    position: absolute;
+    display: block;
+}
+
+.neonLight span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg ,transparent, #2196f3);
+}
+
+.neonLight:hover span:nth-child(1){
+    left: 100%;
+    transition-duration: 0.5s;
+}
+
+.neonLight span:nth-child(2) {
+    right: 0;
+    top: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg ,transparent, #2196f3);
+}
+
+.neonLight:hover span:nth-child(2) {
+    top: 100%;
+    transition-duration: 0.5s;
+    transition-delay: 0.25s;
+}
+
+.neonLight span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg ,transparent, #2196f3);
+}
+
+.neonLight:hover span:nth-child(3) {
+    right: 100%;
+    transition-duration: 0.5s;
+    transition-delay: 0.5s;
+}
+
+.neonLight span:nth-child(4) {
+    left: 0;
+    bottom: -100%;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(0deg ,transparent, #2196f3);
+}
+
+.neonLight:hover span:nth-child(4) {
+    bottom: 100%;
+    transition-duration: 0.5s;
+    transition-delay: 0.75s;
+}
+
+@media (max-width: 768px) {
+    .neonLight {
+        padding: 20px 10px;
+    }
+}
+
+/* Basic styling for the form container */
+.newsletter-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    padding: 20px;
+}
+
+/* Style for the card itself */
+.newsletter-card {
+    background: darkslateblue;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px 40px;
+    width: 100%;
+    max-width: 900px;
+}
+
+.newsletter-header {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Styling for the form and its elements */
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.newsletter-form input {
+    padding: 25px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.newsletter-form input:focus {
+    outline: none;
+    border-color: #5a5acd;
+}
+
+.newsletter-form button {
+    background-color: #5a5acd;
+    color: #ffffff;
+    border: none;
+    padding: 25px 20px;
+    border-radius: 8px;
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.newsletter-form button:hover {
+    background-color: #4343d3;
+    transform: translateY(-2px);
+}
+
+/* Styling for the new unordered list */
+.newsletter-list {
+    text-align: left;
+    list-style-type: disc;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px
+}
+
+.newsletter-list li {
+    font-family: Arial, sans-serif;
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+    .newsletter-container {
+        width: calc(100% - 10px);
+        padding: 5px;
+    }
+
+    .newsletter-card {
+        padding: 20px 10px;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .newsletter-header {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .newsletter-list li {
+        font-size: 1.5rem;
+        color: white;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+}

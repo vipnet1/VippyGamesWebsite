@@ -1,0 +1,2 @@
+Combined all common css to optimize load times where it's critical.
+Used only when necessary as may break stuff & need to remember to update when common css updated.
